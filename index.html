@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classifier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-message">Loading.....</div>
+   
+    <button 
+    id = "get-predictions-button"
+    style="display: none" 
+    onclick="getPredictions()">predictions
+    </button>
+    
+    <button 
+    id = "download-data-button" 
+    style="display: none" 
+    onclick="downloadData()">Download
+    </button>
+
+    <div id = "main"></div>
+    
+    
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+<script src="script.js"></script>
